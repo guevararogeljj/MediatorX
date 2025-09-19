@@ -37,11 +37,11 @@ public interface IRequestXHandler<in TCommand, TResponse> where TCommand : IRequ
 /// <summary>
 /// Mediator implementation.
 /// </summary>
-public class MediatorX : IMediatorX
+public class MediatorXs : IMediatorX
 {
     private readonly IServiceProvider _serviceProvider;
 
-    public MediatorX(IServiceProvider serviceProvider)
+    public MediatorXs(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
     }
@@ -69,7 +69,7 @@ public class MediatorX : IMediatorX
     }
 }
 
-// En MediatorX/MediatorX.cs
+// En MediatorXs/MediatorXs.cs
 
 public interface IRequestXValidator<T>
 {
